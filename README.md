@@ -19,6 +19,7 @@ AI prompts and solution will be accessible in the file "ai_usage_log.txt"
 ### API Testing
 
 api: http://al-inayah.local:8000/api/method/al_inayah.manufacturer_item_mapping.api.get_manufacturer.get_manufacturer_mappings
+
 params/body:
   {
     "item_code": "D-360"
