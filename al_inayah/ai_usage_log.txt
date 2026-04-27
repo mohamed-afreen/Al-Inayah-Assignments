@@ -1,0 +1,52 @@
+1. Issue:
+    I created a query report for Agency lead times. and i got error. The prompt is:-
+    when i go to report i got this error:-
+    Server Error
+    KeyError: 'agency'
+
+    in the agency doctype there is one field called "agency_name". and the id/name of the document is different
+    which means the expression used for document naming. so what are you considered as agency in query?
+
+ChatGPT response:-
+    Remove broken filter usage
+
+What i implemented:
+    find the problem is with filters. the filter is needed for query report. so i changed the report to script report.
+
+===========================================================
+2. Issue:
+    i want to show the active and also inactive agencies in the report.
+
+Prompt:
+    (i pasted my code) still not showing the inactive document. the thing to remember is in in_active document there will
+    not be items in the child table. and another small modification is in filters in status filter you was given 0, 1 that
+    need to change to active and in active.
+
+ChatGPT response:
+    You are using:
+        JOIN `tabAgency Item` ai ON ai.parent = a.name
+        This is an INNER JOIN
+
+        Important understanding (very key)
+        JOIN Type	        Result
+        INNER JOIN	        Only parent WITH child
+        LEFT JOIN	        ALL parent (even without child)
+
+What i implemented:
+    Updated the given code with using LEFT JOIN (chatgpt code).
+
+======================================================================
+3. Issue and prompt:
+    when i test the api in postman i got the error:
+        "exception": "frappe.exceptions.ValidationError: Failed to get method for command al_inayah.manufacturer-item_mapping.
+        api.get_manufacturer.get_manufacturer_mappings with No module named 'al_inayah.manufacturer-item_mapping'"
+
+ChatGPT response:
+    Your API code is fine. The problem is your URL is pointing to a module that does NOT exist in Python.
+    "manufacturer-item_mapping"
+    ❌ Hyphen - is NOT allowed in Python module names
+    Never use - in folder/module names
+    ✔ Use _ instead
+
+What i implemented:
+    updated the module name with manufacturer_item_mapping.
