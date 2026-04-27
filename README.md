@@ -14,7 +14,7 @@ You can test this apps workflow by creating agencies, manufacturer, manufacturer
 
 ### AI Usage Logs
 
-AI prompts and solution will be accessible in the file ai_usage_log.txt
+AI prompts and solution will be accessible in the file "ai_usage_log.txt"
 
 ### API Testing
 
