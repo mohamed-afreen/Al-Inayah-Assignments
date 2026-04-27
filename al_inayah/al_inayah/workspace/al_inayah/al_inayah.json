@@ -1,0 +1,60 @@
+{
+ "charts": [
+  {
+   "chart_name": "Manufacturer Item Overview",
+   "label": "Manufacturer Item Overview"
+  }
+ ],
+ "content": "[{\"id\":\"cohPoacSzj\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Shortcuts</b></span>\",\"col\":12}},{\"id\":\"kx2F5JOKjT\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Agency\",\"col\":4}},{\"id\":\"0u3HDF_GUt\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Manufacturers\",\"col\":4}},{\"id\":\"RdCtBta7LA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"XI2HjScjic\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports</b></span>\",\"col\":12}},{\"id\":\"_kqen5Oh09\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Agency Lead Times\",\"col\":3}},{\"id\":\"_7UDzv1NuL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Items by Manufacturer\",\"col\":3}},{\"id\":\"6wZP7RYQhc\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ZYgEotiLZ7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Manufacturer Item Overview\",\"col\":12}}]",
+ "creation": "2026-04-27 18:30:37.310445",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-review-points",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Al Inayah",
+ "links": [],
+ "modified": "2026-04-27 21:05:20.820017",
+ "modified_by": "Administrator",
+ "module": "Al Inayah",
+ "name": "Al Inayah",
+ "number_cards": [
+  {
+   "label": "Total Agency",
+   "number_card_name": "Total Agency"
+  },
+  {
+   "label": "Total Manufacturers",
+   "number_card_name": "Total Manufacturers"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Items by Manufacturer",
+   "link_to": "Items by Manufacturer",
+   "report_ref_doctype": "Manufacturers Item",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Agency Lead Times",
+   "link_to": "Agency Lead Times",
+   "report_ref_doctype": "Agency",
+   "type": "Report"
+  }
+ ],
+ "title": "Al Inayah"
+}

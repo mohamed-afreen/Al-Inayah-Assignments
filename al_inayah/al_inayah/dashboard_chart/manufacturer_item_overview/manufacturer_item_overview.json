@@ -1,0 +1,35 @@
+{
+ "chart_name": "Manufacturer Item Overview",
+ "chart_type": "Report",
+ "creation": "2026-04-27 21:04:44.941608",
+ "currency": "AED",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2026-04-27 21:04:44.941608",
+ "modified_by": "Administrator",
+ "module": "Al Inayah",
+ "name": "Manufacturer Item Overview",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Items by manufacturer chart",
+ "roles": [],
+ "show_values_over_chart": 1,
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "manufacturers",
+ "y_axis": [
+  {
+   "color": "#29CD42",
+   "y_field": "item_count"
+  }
+ ]
+}

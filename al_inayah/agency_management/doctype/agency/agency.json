@@ -1,37 +1,78 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-04-27 11:38:20.872585",
+ "autoname": "field:agency_name",
+ "creation": "2026-04-27 14:13:41.946655",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_wroo",
-  "amended_from"
+  "agency_name",
+  "is_active",
+  "column_break_nlqu",
+  "territory",
+  "primary_contact",
+  "supplier",
+  "items_section",
+  "agency_item"
  ],
  "fields": [
   {
-   "fieldname": "section_break_wroo",
-   "fieldtype": "Section Break"
+   "fieldname": "agency_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Agency Name",
+   "reqd": 1,
+   "unique": 1
   },
   {
-   "fieldname": "amended_from",
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "column_break_nlqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Data",
+   "label": "Territory"
+  },
+  {
+   "fieldname": "primary_contact",
+   "fieldtype": "Phone",
+   "label": "Primary Contact"
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "agency_item",
+   "fieldtype": "Table",
+   "label": "Agency Item",
+   "options": "Agency Item"
+  },
+  {
+   "fieldname": "supplier",
    "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Agency",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "hidden": 1,
+   "label": "Supplier",
+   "options": "Supplier"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2026-04-27 11:38:20.872585",
+ "modified": "2026-04-27 17:32:33.112141",
  "modified_by": "Administrator",
  "module": "Agency Management",
  "name": "Agency",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -44,7 +85,6 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],
@@ -52,5 +92,8 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
